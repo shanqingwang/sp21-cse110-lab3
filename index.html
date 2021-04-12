@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanqing's Journal</title>
+<link rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/ios/452/s.png"
+/>
+</head>
+<body>
+    <header>
+        <h1>Shanqing's Journal</h1>
+        <nav>
+            <ul>
+                <li><a href="#entry1">Day 1</a></li>
+                <li><a href="#entry2">Day 2</a></li>
+                <li><a href="#entry3">Day 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2 id="entry1">Friday, 4/9/21</h2>
+        <section>
+            <h3>Highlights</h3>
+                <ul>
+                    <li>Good day at work</li>
+                    <li><i>Relaxed</i>, games with friends</li>
+                </ul>
+        </section>
+        <section>
+            <h3>Lowlights</h3>
+                <ul>
+                    <li>Did not get much work done</li>
+                </ul>
+        </section>
+        <section>
+            <h3>To-do</h3>
+                <ol>
+                    <li>Finish 182 HW</li>
+                    <li>Finish 110 Lab</li>
+                    <li>Finish 185 Lab</li>
+                </ol>
+        </section>
+        <section>
+            <h3>Thoughts</h3>
+            <details>
+                <summary>League of Legends</summary>
+                Arams are a nice way way to relax, and still have <b>intense</b> fights all the same.
+            </details>
+        </section>
+        <section>
+            <h3>Media Share</h3>
+                <p>When you land the skill the right way</p>
+                <audio controls>
+                    <source src="Media/im-a-gnome-meme-sound-effect-woo.mp3" type="audio/mp3">
+                </audio>
+        </section>
+    </main>
+
+    <hr>
+
+    <main>
+        <h2 id="entry2">Saturday, 4/10/21</h2>
+        <section>
+            <h3>Highlights</h3>
+                <ul>
+                    <li>Finished 182 Lab</li>
+                    <li>Watched LCS series, was fun</li>
+                </ul>
+        </section>
+        <section> 
+            <h3>Lowlights</h3>
+                <ul>
+                    <li>Was not too focused on work</li>
+                </ul>
+        </section>
+        <section>
+            <h3>To-do</h3>
+                <ol>
+                    <li>Finish 110 Lab</li>
+                    <li>Finish 185 Lab</li>
+                </ol>
+        </section>
+        <section>
+            <h3>Thoughts</h3>
+            <details>
+                <summary>Coding</summary>
+                Writing code can be a pretty ok experience. However, 
+                setting up dependancies to be able to run code sometimes is <em>such</em> a <strong>major</strong> hassle
+            </details>
+        </section>
+        <section>
+            <h3>Media Share</h3>
+                <div>Funny video I revisited</div>
+                <video width="320" height="240" controls>
+                    <source src="Media/Jerma985 - jerma crushes the Westminster agility course.mp4" type="video/mp4">
+                </video>
+                <span><a href="https://www.youtube.com/watch?v=gH-MPo1d_C4">source</a></span>
+        </section>
+    </main>
+
+    <hr>
+
+    <main>
+        <h2 id="entry3">Sunday, 4/11/21</h2>
+        <section>
+            <h3>Highlights</h3>
+                <ul>
+                    <li>LCS finals were a banger series</li>
+                </ul>
+        </section>
+        <section>
+            <h3>Lowlights</h3>
+                <ul>
+                    <li>Hit my toe on a desk, ouch</li>
+                </ul>
+        </section>
+        <section>
+            <h3>To-do</h3>
+                <ol>
+                    <li>Read for LTEA</li>
+                </ol>
+        </section>
+        <section>
+            <h3>Thoughts</h3>
+            <details>
+                <summary>A haiku</summary>
+                <i>
+                Early and Often<br>
+                I really should be starting<br>
+                Starting tomorrow<br>
+                </i>
+            </details>
+        </section>
+        <section>
+            <h3>Media Share</h3>
+                <p>Relevant Meme</p>
+                <img src="Media/html_meme.png" alt="html meme">
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div>Submit an entry.</div>
+        <form>
+            <fieldset>
+                <label for="date">Enter Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <label for="days">Choose a day:</label>
+                <select name="days" id="days">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+                <br>
+
+                <label for="mood_choice">Choose a mood:</label>
+                <input list="moods" id="mood_choice" name="mood_choice" />
+
+                <datalist id="moods">
+                    <option value="Happy">
+                    <option value="Sad">
+                    <option value="Angry">
+                </datalist>
+                <br>
+
+                <!-- trying out different styles -->
+                <div>Choose elements to add:</div>
+                <input type="checkbox" id="highlights" name="check">
+                <label for="highlights">highlights</label>
+                <br>
+                <input type="checkbox" id="lowlights" name="check">
+                <label for="lowlights">lowlights</label>
+
+               
+                <div>Select a style:</div>
+                <div>
+                    <input type="radio" id="basic" name="style" checked>
+                    <label for="basic">basic</label>
+                </div>
+                <div>
+                    <input type="radio" id="flowery" name="style">
+                    <label for="flowery">flowery</label>
+
+                </div>
+                
+                <label for="body">Title:</label>
+                <input type="text" id="body" name="body">
+                
+                <br>
+                <label for="thoughts">Thoughts:</label>
+                <textarea id="thoughts" name="thoughts" rows="4" cols="40">Enter text here</textarea>
+                <br><br>
+                <button type="button">Submit</button>
+
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
