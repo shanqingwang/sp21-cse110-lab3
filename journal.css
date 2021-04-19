@@ -1,0 +1,154 @@
+/* CSS for journal entry at index.html */
+
+/* universal selectors */
+
+* {
+    color: rgb(255,179,186);
+    background-color: #fff5ea;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+/* element formats */
+
+
+header ul{
+    color:lightblue;
+}
+
+ul > li {
+    font-size: 1em;
+}
+
+
+
+h1 {
+    border: 1px solid lightblue;
+    text-decoration: underline;
+    text-align: center
+}
+
+h2 {
+    border-width: 0.05cm;
+    border-style: dashed;
+    border-color: rgb(15, 201, 201);;
+    border-radius: 50mm;
+}
+
+p {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+ul {
+    padding: 1em 1em 1em 1em;
+    display: block
+}
+
+ol{
+    display:block
+}
+
+li {
+    margin: auto auto auto auto;
+}
+
+summary{
+    display:block;
+}
+
+/* id selectors */
+#days {
+    background-color:white;
+}
+
+/* grid testing */
+#entry1 {
+    display:grid;
+    row-gap:5px;
+    justify-items:flex-start;
+    flex-wrap:nowrap;
+}
+
+#entry1 h2 {
+    justify-self: center;
+}
+
+#entry1 audio{
+    align-self: stretch;
+}
+/* psedo-class selectors */ 
+button:hover{
+    color:hsl(197, 100%, 84%);
+}
+
+button:active{
+    color:red;
+}
+
+a:active{
+    color:red;
+}
+
+/* edit entry link styles */
+a[href*="#entry"]:hover {
+    color: hsl(197, 100%, 84%);
+}
+
+video{
+    height:40vh;
+    width:auto;
+    max-width:fit-content;
+    min-width:30vw;
+
+    /* changes source positioning*/
+    display:block;
+    position:sticky;
+}
+
+@media (min-width: 35rem){
+    video{
+        width:200px
+    }
+}
+
+footer{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+
+    /* changes size of box */
+    position:absolute;
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer form{
+    align-self:center;
+}
+
+footer div{
+    align-self:center;
+}
+
+label ~ input{
+    background-color: white;
+}
+
+label ~ textarea{
+    background-color:#f7ebdd
+}
+
+input + label{
+    color: rgb(15, 201, 201);
+    display:inline;
+}
+
+#thoughts{
+    background-color:white;
+}
