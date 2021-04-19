@@ -1,0 +1,78 @@
+/* CSS for journal entry at index.html */
+
+/* universal selectors */
+
+* {
+    background-color: #fff5ea;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+/* element formats */
+
+body {
+
+}
+
+header ul{
+    color: red;
+}
+
+ul > li {
+    font-size: 1em;
+}
+
+
+
+h1 {
+    border: 1px solid lightblue;
+    text-decoration: underline;
+    text-align: center
+}
+
+h2 {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: orange;
+    border-radius: 10px;
+}
+
+p {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+ul {
+    padding: 1em 1em 1em 1em
+}
+
+
+/* id selectors */
+#entry1 {
+    color: rgb(255,179,186)
+}
+
+/* psedo-class selectors */ 
+button:hover{
+    color:hsl(197, 100%, 84%);
+}
+
+button:active{
+    color:red;
+}
+
+a:active{
+    color:red;
+}
+
+/* edit entry link styles */
+a[href*="#entry"]:hover {
+    color: hsl(197, 100%, 84%);
+}
+
+
+
+footer{
+    
+}
